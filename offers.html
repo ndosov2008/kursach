@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спецпредложения | DosHotel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container nav-flex">
+            <a href="index.html" class="logo">
+                <img src="logo.svg" alt="DosHotel" style="height: 30px; width: auto; vertical-align: middle;">
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="rooms.html">Номера</a></li>
+                    <li><a href="restaurant.html">Ресторан</a></li>
+                    <li><a href="offers.html" class="active">Акции</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <a href="booking.html" class="btn btn-gold ">Забронировать</a>
+            <button class="burger" type="button" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section
+        style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/11.png) center/cover; padding: 100px 0; color: white; text-align: center;">
+        <div class="container">
+            <h1 style="font-family: 'Playfair Display'; font-size: 48px; margin-bottom: 10px;">Специальные условия</h1>
+            <p style="letter-spacing: 2px; text-transform: uppercase; opacity: 0.8;">Эксклюзивные предложения для вашего
+                комфорта</p>
+        </div>
+    </section>
+
+    <section class="container" style="padding: 80px 0;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 30px;">
+
+            <div style="position: relative; height: 400px; overflow: hidden; border-radius: 4px;">
+                <img src="img/5.png" style="width:100%; height:100%; object-fit:cover; filter: brightness(0.6);"
+                    onerror="this.src='img/12.png'">
+                <div style="position: absolute; bottom: 30px; left: 30px; color: white; right: 30px;">
+                    <span
+                        style="background: #b08d57; padding: 5px 12px; font-size: 11px; font-weight: 700; letter-spacing: 1px;">PROMO</span>
+                    <h2 style="font-family: 'Playfair Display'; margin: 15px 0 10px;">Раннее бронирование</h2>
+                    <p style="margin-bottom: 20px; opacity: 0.9;">Забронируйте номер за 30 дней до заезда и получите
+                        гарантированную скидку -20% на весь период проживания.</p>
+                    <a href="booking.html?promo=EARLY20" class="btn btn-gold">Забронировать</a>
+                </div>
+            </div>
+
+            <div style="position: relative; height: 400px; overflow: hidden; border-radius: 4px;">
+                <img src="img/13.png" style="width:100%; height:100%; object-fit:cover; filter: brightness(0.6);">
+                <div style="position: absolute; bottom: 30px; left: 30px; color: white; right: 30px;">
+                    <span
+                        style="background: #b08d57; padding: 5px 12px; font-size: 11px; font-weight: 700; letter-spacing: 1px;">GIFT</span>
+                    <h2 style="font-family: 'Playfair Display'; margin: 15px 0 10px;">Завтрак в подарок</h2>
+                    <p style="margin-bottom: 20px; opacity: 0.9;">При выборе номеров категорий Business Studio, Family
+                        Suite или Royal Lux — изысканный завтрак включен в стоимость.</p>
+                    <a href="booking.html" class="btn btn-gold">Подробнее</a>
+                </div>
+            </div>
+
+            <div style="position: relative; height: 400px; overflow: hidden; border-radius: 4px;">
+                <img src="img/6.png" style="width:100%; height:100%; object-fit:cover; filter: brightness(0.6);">
+                <div style="position: absolute; bottom: 30px; left: 30px; color: white; right: 30px;">
+                    <span
+                        style="background: #b08d57; padding: 5px 12px; font-size: 11px; font-weight: 700; letter-spacing: 1px;">ROMANCE</span>
+                    <h2 style="font-family: 'Playfair Display'; margin: 15px 0 10px;">Романтический вечер</h2>
+                    <p style="margin-bottom: 20px; opacity: 0.9;">Украшение номера, бутылка игристого и поздний выезд до
+                        16:00 для незабываемого отдыха вдвоем.</p>
+                    <a href="booking.html?promo=ROMANCE" class="btn btn-gold">Выбрать дату</a>
+                </div>
+            </div>
+
+            <div style="position: relative; height: 400px; overflow: hidden; border-radius: 4px;">
+                <img src="img/14.png" style="width:100%; height:100%; object-fit:cover; filter: brightness(0.6);">
+                <div style="position: absolute; bottom: 30px; left: 30px; color: white; right: 30px;">
+                    <span
+                        style="background: #b08d57; padding: 5px 12px; font-size: 11px; font-weight: 700; letter-spacing: 1px;">LONG
+                        STAY</span>
+                    <h2 style="font-family: 'Playfair Display'; margin: 15px 0 10px;">Дом вдали от дома</h2>
+                    <p style="margin-bottom: 20px; opacity: 0.9;">Оставайтесь у нас на 7 ночей и более — и получите
+                        специальный тариф со скидкой 30% автоматически.</p>
+                    <a href="booking.html" class="btn btn-gold">Узнать цену</a>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 60px; padding: 40px; background: #fdfaf5; border-left: 5px solid #b08d57;">
+            <h4 style="font-family: 'Playfair Display'; margin-bottom: 10px;">Хотите персональное предложение?</h4>
+            <p>Для корпоративных клиентов и организаторов мероприятий у нас действуют индивидуальные условия. Свяжитесь
+                с нашим отделом продаж по телефону +375 (17) 222-33-44.</p>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="#" class="logo" style="color: white;">DOS<span>HOTEL</span></a>
+                <p style="margin-top: 20px; font-size: 14px; line-height: 1.8;">Премиальный отдых в центре Минска.</p>
+            </div>
+            <div>
+                <h4>Навигация</h4>
+                <ul>
+                    <li><a href="rooms.html">Номера</a></li>
+                    <li><a href="offers.html">Спецпредложения</a></li>
+                    <li><a href="booking.html">Бронирование</a></li>
+                    <li><a href="restaurant.html">Ресторан</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Контакты</h4>
+                <p style="font-size: 14px;">Минск, пр. Независимости, 10</p>
+                <p style="font-size: 14px;">+375 (17) 222-33-44</p>
+            </div>
+            <div>
+                <h4>Подписка</h4>
+                <form style="margin-top: 15px; display: flex; gap: 5px;">
+                    <input type="email" placeholder="Email"
+                        style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.2); padding: 12px; color: white; flex: 1;">
+                    <button class="btn-gold" style="padding: 12px 20px; border: none;">OK</button>
+                </form>
+            </div>
+        </div>
+        <div class="container" style="text-align: center; margin-top: 60px; font-size: 12px; opacity: 0.5;">
+            &copy; 2026 DosHotel. Разработано для учебного проекта FIT BSTU.
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

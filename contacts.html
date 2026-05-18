@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | DosHotel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page-sticky-footer">
+
+    <header class="main-header">
+        <div class="container nav-flex">
+            <a href="index.html" class="logo">
+                <img src="logo.svg" alt="DosHotel" style="height: 30px; width: auto; vertical-align: middle;">
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="rooms.html">Номера</a></li>
+                    <li><a href="restaurant.html">Ресторан</a></li>
+                    <li><a href="offers.html">Акции</a></li>
+                    <li><a href="contacts.html" class="active">Контакты</a></li>
+                </ul>
+            </nav>
+            <a href="booking.html" class="btn btn-gold ">Забронировать</a>
+            <button class="burger" type="button" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="container page-main-content" style="padding: 80px 0;">
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 50px;">
+            <div>
+                <h1 style="font-family: 'Playfair Display'; margin-bottom: 30px;">Свяжитесь с DosHotel</h1>
+                <p style="margin-bottom: 20px;"><strong>Адрес:</strong> г. Минск, пр. Независимости, 10</p>
+                <p style="margin-bottom: 20px;"><strong>Телефон рецепции:</strong> +375 (17) 222-33-44</p>
+                <p style="margin-bottom: 20px;"><strong>Отдел бронирования:</strong> +375 (29) 111-00-11</p>
+                <p style="margin-bottom: 40px;"><strong>Email:</strong> welcome@doshotel.by</p>
+
+                <h3>Мы в соцсетях</h3>
+                <div style="display:flex; gap: 10px; margin-top: 15px;">
+                    <a href="#" class="btn btn-outline social-link-btn" style="padding: 10px 20px;">Instagram</a>
+                    <a href="#" class="btn btn-outline social-link-btn" style="padding: 10px 20px;">Telegram</a>
+                </div>
+            </div>
+            <div style="background: #eee; height: 450px; border-radius: 8px; overflow: hidden;">
+                <iframe src="https://yandex.ru/map-widget/v1/?ll=27.548483%2C53.896399&z=17" width="100%" height="100%"
+                    frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="#" class="logo" style="color: white;">DOS<span>HOTEL</span></a>
+                <p style="margin-top: 20px; font-size: 14px; line-height: 1.8;">Премиальный отдых в центре Минска. Мы
+                    объединяем традиции гостеприимства и современные технологии безопасности.</p>
+            </div>
+            <div>
+                <h4>Навигация</h4>
+                <ul>
+                    <li><a href="rooms.html">Номера</a></li>
+                    <li><a href="offers.html">Спецпредложения</a></li>
+                    <li><a href="booking.html">Бронирование</a></li>
+                    <li><a href="restaurant.html">Ресторан</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Контакты</h4>
+                <p style="font-size: 14px; margin-bottom: 10px;">Минск, пр. Независимости, 10</p>
+                <p style="font-size: 14px; margin-bottom: 10px;">+375 (17) 222-33-44</p>
+                <p style="font-size: 14px;">welcome@doshotel.by</p>
+            </div>
+            <div>
+                <h4>Новости</h4>
+                <form style="margin-top: 15px; display: flex; gap: 5px;">
+                    <input type="email" placeholder="Ваш Email"
+                        style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.2); padding: 12px; color: white; flex: 1;">
+                    <button class="btn-gold" style="padding: 12px 20px; cursor: pointer; border: none;">OK</button>
+                </form>
+            </div>
+        </div>
+        <div class="container" style="text-align: center; margin-top: 60px; font-size: 12px; opacity: 0.5;">
+            &copy; 2026 DosHotel. Дизайн и разработка: FIT BSTU. Все права защищены.
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

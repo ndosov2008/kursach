@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронирование | DosHotel — Официальный сайт</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="page-sticky-footer">
+
+    <header class="main-header">
+        <div class="container nav-flex">
+            <a href="index.html" class="logo">
+                <img src="logo.svg" alt="DosHotel" style="height: 30px; width: auto; vertical-align: middle;">
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="rooms.html">Номера</a></li>
+                    <li><a href="restaurant.html">Ресторан</a></li>
+                    <li><a href="offers.html">Акции</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <a href="booking.html" class="btn btn-gold">Забронировать</a>
+            <button class="burger" type="button" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="booking-page">
+        <div class="container">
+            <div class="booking-header" style="text-align: center; margin-bottom: 50px; padding-top: 50px;">
+                <h1 style="font-family: 'Playfair Display'; font-size: 48px;">Зарезервировать отдых</h1>
+                <p style="color: #b08d57; letter-spacing: 2px; text-transform: uppercase; font-size: 14px;">Гарантия
+                    лучшей цены при прямом бронировании</p>
+            </div>
+
+            <div class="booking-wrapper">
+                <div class="form-container">
+                    <form id="bookingForm">
+                        <div class="form-group">
+                            <label><i class="fas fa-user"></i> ФИО Гостя</label>
+                            <input type="text" placeholder="Введите ваше имя" required>
+                        </div>
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <div class="form-group">
+                                <label><i class="fas fa-calendar-check"></i> Дата заезда</label>
+                                <input type="date" id="checkIn" required>
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fas fa-calendar-times"></i> Дата выезда</label>
+                                <input type="date" id="checkOut" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label><i class="fas fa-bed"></i> Выберите номер</label>
+                            <select id="roomType" style="width: 100%; padding: 15px; border: 1px solid #ddd;">
+                                <option value="120">Standard Single — 120 BYN</option>
+                                <option value="180">Superior Double — 180 BYN</option>
+                                <option value="250">Business Studio — 250 BYN</option>
+                                <option value="350">Family Suite — 350 BYN</option>
+                                <option value="500">Loft Apartment — 500 BYN</option>
+                                <option value="950">Royal Lux — 950 BYN</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label><i class="fas fa-utensils"></i> Тип питания</label>
+                            <select id="mealType" style="width: 100%; padding: 15px; border: 1px solid #ddd;">
+                                <option value="0">Только завтрак (Включено)</option>
+                                <option value="40">Полупансион (Завтрак + Ужин) — 40 BYN/день</option>
+                                <option value="75">Полный пансион (3-х разовое) — 75 BYN/день</option>
+                                <option value="120">All Inclusive — 120 BYN/день</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label><i class="fas fa-comment-alt"></i> Комментарий (необязательно)</label>
+                            <textarea rows="3" placeholder="Ваши пожелания к номеру..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label><i class="fas fa-tag"></i> Промокод</label>
+                            <div style="display: flex; gap: 10px;">
+                                <input type="text" id="promoCode" placeholder="Введите код (например, EARLY20)"
+                                    style="flex: 1; padding: 12px; border: 1px solid #ddd;">
+                                <button type="button" id="applyPromo" class="btn btn-outline"
+                                    style="padding: 10px 20px;">Применить</button>
+                            </div>
+                            <small id="promoMessage" style="display: block; margin-top: 5px; font-size: 12px;"></small>
+                        </div>
+
+                        <button type="submit" class="btn btn-gold" style="width: 100%; padding: 20px;">
+                            Подтвердить бронирование
+                        </button>
+                    </form>
+                </div>
+
+                <aside class="booking-summary">
+                    <h3>Ваш заказ</h3>
+                    <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">
+
+                    <div class="summary-item">
+                        <span>Отель:</span>
+                        <strong>DosHotel Minsk</strong>
+                    </div>
+                    <div class="summary-item">
+                        <span>Ночей:</span>
+                        <strong id="nightsCount">0</strong>
+                    </div>
+                    <div class="summary-item">
+                        <span>Питание:</span>
+                        <strong id="mealSummary">Только завтрак</strong>
+                    </div>
+
+                    <div class="summary-item" id="discountItem"
+                        style="display: none; color: #e74c3c; margin-top: 10px;">
+                        <span>Скидка:</span>
+                        <strong id="discountValue">0 BYN</strong>
+                    </div>
+
+                    <div class="total-price-block"
+                        style="margin-top: 20px; padding-top: 20px; border-top: 2px solid #b08d57;">
+                        <span>Итого к оплате:</span>
+                        <div style="display: flex; flex-direction: column; align-items: flex-end;">
+                            <del id="oldPrice"
+                                style="color: #888; font-size: 16px; display: none; margin-bottom: 5px;">0 BYN</del>
+                            <h2 id="totalPrice" style="margin: 0;">0 BYN</h2>
+                        </div>
+                    </div>
+
+                    <p style="font-size: 12px; color: #888; margin-top: 20px;">
+                        * Бесплатная отмена бронирования возможна не позднее, чем за 24 часа до заезда.
+                    </p>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <div id="toast" class="toast">
+        <i class="fas fa-check-circle"></i> Бронирование успешно оформлено!
+    </div>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="#" class="logo" style="color: white;">DOS<span>HOTEL</span></a>
+                <p style="margin-top: 20px; font-size: 14px; line-height: 1.8;">Премиальный отдых в центре Минска. Мы
+                    объединяем традиции гостеприимства и современные технологии безопасности.</p>
+            </div>
+            <div>
+                <h4>Навигация</h4>
+                <ul>
+                    <li><a href="rooms.html">Номера</a></li>
+                    <li><a href="offers.html">Спецпредложения</a></li>
+                    <li><a href="booking.html">Бронирование</a></li>
+                    <li><a href="restaurant.html">Ресторан</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Контакты</h4>
+                <p style="font-size: 14px; margin-bottom: 10px;">Минск, пр. Независимости, 10</p>
+                <p style="font-size: 14px; margin-bottom: 10px;">+375 (17) 222-33-44</p>
+                <p style="font-size: 14px;">welcome@doshotel.by</p>
+            </div>
+            <div>
+                <h4>Новости</h4>
+                <form id="subscribeForm" style="margin-top: 15px; display: flex; gap: 5px;">
+                    <input type="email" placeholder="Ваш Email" required
+                        style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.2); padding: 12px; color: white; flex: 1;">
+                    <button type="submit" class="btn-gold"
+                        style="padding: 12px 20px; cursor: pointer; border: none;">OK</button>
+                </form>
+            </div>
+        </div>
+        <div class="container" style="text-align: center; margin-top: 60px; font-size: 12px; opacity: 0.5;">
+            &copy; 2026 DosHotel. Дизайн и разработка: FIT BSTU. Все права защищены.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

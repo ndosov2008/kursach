@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hotel>
+    <rooms>
+        <room id="1">
+            <name>Standard Single</name>
+            <price>120 BYN</price>
+            <amenities>Wi-Fi, ТВ, Душ</amenities>
+        </room>
+        <room id="2">
+            <name>Superior Double</name>
+            <price>180 BYN</price>
+            <amenities>Wi-Fi, ТВ, Кондиционер, Мини-бар</amenities>
+        </room>
+        <room id="3">
+            <name>Business Studio</name>
+            <price>250 BYN</price>
+            <amenities>Wi-Fi, ТВ, Сейф, Кофе-машина, Рабочая зона</amenities>
+        </room>
+        <room id="4">
+            <name>Family Suite</name>
+            <price>350 BYN</price>
+            <amenities>2 комнаты, Кухня, Wi-Fi, Smart TV, Ванна</amenities>
+        </room>
+        <room id="5">
+            <name>Loft Apartment</name>
+            <price>500 BYN</price>
+            <amenities>Панорамный вид, Терраса, Акустика Marshall, Станция Алиса</amenities>
+        </room>
+        <room id="6">
+            <name>Royal Lux</name>
+            <price>950 BYN</price>
+            <amenities>VIP-сервис, Джакузи, Личный консьерж, Завтрак в номер</amenities>
+        </room>
+    </rooms>
+</hotel>

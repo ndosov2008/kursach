@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ресторан DOS | DosHotel Minsk</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container nav-flex">
+            <a href="index.html" class="logo">
+                <img src="logo.svg" alt="DosHotel" style="height: 30px; width: auto; vertical-align: middle;">
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="rooms.html">Номера</a></li>
+                    <li><a href="restaurant.html" class="active">Ресторан</a></li>
+                    <li><a href="offers.html">Акции</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <a href="booking.html" class="btn btn-gold ">Забронировать</a>
+            <button class="burger" type="button" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="restaurant-hero">
+        <div class="container" style="text-align: center; color: white;">
+            <span style="letter-spacing: 5px; text-transform: uppercase; font-size: 14px;">High Cuisine</span>
+            <h1 style="font-family: 'Playfair Display'; font-size: 64px; margin: 10px 0;">Ресторан "DOS"</h1>
+            <p style="max-width: 600px; margin: 0 auto; opacity: 0.9;">Панорамный вид на Минск и уникальное сочетание
+                европейских традиций с локальными фермерскими продуктами.</p>
+        </div>
+    </section>
+
+    <section class="container" style="padding: 100px 0;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+            <div>
+                <h2 style="font-family: 'Playfair Display'; font-size: 36px; margin-bottom: 25px;">Утро начинается здесь
+                </h2>
+                <p>Для гостей отеля мы сервируем завтрак в формате «Шведский стол». Свежая выпечка, домашние сыры,
+                    сезонные фрукты и бодрящий кофе — идеальное начало вашего продуктивного дня.</p>
+                <div style="margin-top: 30px; display: flex; gap: 40px;">
+                    <div>
+                        <h4 style="color: #b08d57;">07:00 — 11:00</h4>
+                        <p style="font-size: 12px; color: #888;">ЗАВТРАКИ</p>
+                    </div>
+                    <div>
+                        <h4 style="color: #b08d57;">12:00 — 23:00</h4>
+                        <p style="font-size: 12px; color: #888;">A LA CARTE</p>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 400px; background: url('img/7.png') center/cover; box-shadow: 20px 20px 0 #b08d57;">
+            </div>
+        </div>
+    </section>
+
+    <section style="background: #fdfaf5; padding: 100px 0;">
+        <div class="container">
+            <h2 style="font-family: 'Playfair Display'; text-align: center; margin-bottom: 60px; font-size: 42px;">Меню
+                A La Carte</h2>
+
+            <div class="menu-grid">
+                <div>
+                    <h3
+                        style="font-family: 'Playfair Display'; color: #b08d57; margin-bottom: 30px; border-bottom: 1px solid #ddd; padding-bottom: 10px;">
+                        Закуски и Салаты</h3>
+                    <div class="menu-item">
+                        <h5>Брускетта с камчатским крабом</h5>
+                        <span class="price">28 BYN</span>
+                    </div>
+                    <div class="menu-item">
+                        <h5>Тартар из говядины с трюфельным маслом</h5>
+                        <span class="price">32 BYN</span>
+                    </div>
+                    <div class="menu-item">
+                        <h5>Салат с утиной грудкой и инжиром</h5>
+                        <span class="price">26 BYN</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3
+                        style="font-family: 'Playfair Display'; color: #b08d57; margin-bottom: 30px; border-bottom: 1px solid #ddd; padding-bottom: 10px;">
+                        Основные блюда</h3>
+                    <div class="menu-item">
+                        <h5>Стейк Рибай (Prime Selection)</h5>
+                        <span class="price">55 BYN</span>
+                    </div>
+                    <div class="menu-item">
+                        <h5>Филе дорадо с соусом Шампань</h5>
+                        <span class="price">42 BYN</span>
+                    </div>
+                    <div class="menu-item">
+                        <h5>Ризотто с лесными грибами</h5>
+                        <span class="price">24 BYN</span>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 60px;">
+                <a href="contacts.html" class="btn btn-gold">Забронировать столик</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="#" class="logo" style="color: white;">DOS<span>HOTEL</span></a>
+                <p style="margin-top: 20px; font-size: 14px; line-height: 1.8;">Премиальный отдых в центре Минска. Мы
+                    объединяем традиции гостеприимства и современные технологии безопасности.</p>
+            </div>
+            <div>
+                <h4>Навигация</h4>
+                <ul>
+                    <li><a href="rooms.html">Номера</a></li>
+                    <li><a href="offers.html">Спецпредложения</a></li>
+                    <li><a href="booking.html">Бронирование</a></li>
+                    <li><a href="restaurant.html">Ресторан</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Контакты</h4>
+                <p style="font-size: 14px; margin-bottom: 10px;">Минск, пр. Независимости, 10</p>
+                <p style="font-size: 14px; margin-bottom: 10px;">+375 (17) 222-33-44</p>
+                <p style="font-size: 14px;">welcome@doshotel.by</p>
+            </div>
+            <div>
+                <h4>Новости</h4>
+                <form style="margin-top: 15px; display: flex; gap: 5px;">
+                    <input type="email" placeholder="Ваш Email"
+                        style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.2); padding: 12px; color: white; flex: 1;">
+                    <button class="btn-gold" style="padding: 12px 20px; cursor: pointer; border: none;">OK</button>
+                </form>
+            </div>
+        </div>
+        <div class="container" style="text-align: center; margin-top: 60px; font-size: 12px; opacity: 0.5;">
+            &copy; 2026 DosHotel. Дизайн и разработка: FIT BSTU. Все права защищены.
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DosHotel | Официальный сайт</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+    <div class="container nav-flex">
+        <a href="index.html" class="logo">
+            <img src="logo.svg" alt="DosHotel" style="height: 30px; width: auto; vertical-align: middle;">
+        </a>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="rooms.html">Номера</a></li>
+                <li><a href="restaurant.html">Ресторан</a></li>
+                <li><a href="offers.html">Акции</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <a href="booking.html" class="btn btn-gold">Забронировать</a>
+        <button class="burger" type="button" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+
+    <section class="hero-slider">
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+
+        <div class="hero-content">
+            <div class="container"
+                style="background: rgba(0,0,0,0.2); padding: 40px; backdrop-filter: blur(4px); border-radius: 4px;">
+                <h1 style="font-family: 'Playfair Display'; font-size: 72px; line-height: 1.1;">Превосходство <br> в
+                    деталях</h1>
+                <p style="letter-spacing: 5px; text-transform: uppercase; margin: 20px 0;">Искусство гостеприимства в
+                    сердце Минска</p>
+                <div style="margin-top: 30px; display: flex; gap: 20px; justify-content: center;">
+                    <a href="rooms.html" class="btn btn-gold">Смотреть номера</a>
+                    <a href="#about" class="btn btn-outline" style="color: white; border-color: white;">Узнать
+                        больше</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features container">
+        <div style="text-align: center; margin-bottom: 60px;">
+            <h2 style="font-family: 'Playfair Display'; font-size: 36px;">Почему выбирают нас</h2>
+            <div style="width: 50px; height: 3px; background: #b08d57; margin: 20px auto;"></div>
+        </div>
+        <div class="features-grid">
+            <div class="feature-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <h4>Центр города</h4>
+                <p>В шаговой доступности от главных достопримечательностей столицы.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-utensils"></i>
+                <h4>Завтрак "Шведский стол"</h4>
+                <p>Авторская кухня и лучшие локальные продукты каждое утро.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-dumbbell"></i>
+                <h4>Фитнес и SPA</h4>
+                <p>Эксклюзивные оздоровительные процедуры для восстановления сил.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-concierge-bell"></i>
+                <h4>Сервис 24/7</h4>
+                <p>Мгновенное решение любого вашего вопроса в любое время.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="hotel-story" style="padding: 100px 0; background: #fff;">
+        <div class="container">
+            <div class="story-grid"
+                style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+                <div class="about-img"
+                    style="height: 600px; background: url(img/index1.png) center/cover; box-shadow: -30px 30px 0 #b08d57;">
+                </div>
+                <div class="story-text">
+                    <span style="color: #b08d57; font-weight: 700; letter-spacing: 2px;">НАСЛЕДИЕ И КОМФОРТ</span>
+                    <h2 style="font-family: 'Playfair Display'; font-size: 42px; margin: 20px 0;">Ваш идеальный дом в
+                        пути</h2>
+                    <p>DosHotel — это место, где строгий минимализм бизнес-интерьеров встречается с теплотой домашнего
+                        уюта. Мы создали пространство для тех, кто не готов идти на компромиссы между продуктивной
+                        работой и качественным отдыхом.</p>
+
+                    <div style="margin: 30px 0; padding: 30px; background: #fdfaf5; border-left: 4px solid #b08d57;">
+                        <p style="font-style: italic; font-size: 18px; color: #444;">"Мы не просто сдаем номера, мы
+                            создаем атмосферу, в которой каждая деталь работает на ваше спокойствие."</p>
+                    </div>
+
+                    <div class="stats-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div>
+                            <h3 style="color: #b08d57; font-size: 32px;">86</h3>
+                            <p style="font-size: 12px; text-transform: uppercase;">Люкс номеров</p>
+                        </div>
+                        <div>
+                            <h3 style="color: #b08d57; font-size: 32px;">2</h3>
+                            <p style="font-size: 12px; text-transform: uppercase;">Конференц-зала</p>
+                        </div>
+                    </div>
+                    <br>
+                    <a href="rooms.html" class="btn btn-outline">Посмотреть фонд номеров</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-restaurant"
+        style="padding: 120px 0; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/index2.png) center/cover fixed; color: white; text-align: center;">
+        <div class="container">
+            <span
+                style="color: #b08d57; text-transform: uppercase; letter-spacing: 3px; font-weight: 600;">Гастрономия</span>
+            <h2 style="font-family: 'Playfair Display'; font-size: 56px; margin: 20px 0;">Ресторан "DOS"</h2>
+            <p style="max-width: 700px; margin: 0 auto 40px; opacity: 0.9; font-size: 18px;">
+                Откройте для себя высокую кухню в панорамном ресторане на крыше. Авторское меню от шеф-повара и
+                безупречная винная карта.
+            </p>
+            <div style="display: flex; gap: 20px; justify-content: center;">
+                <a href="restaurant.html" class="btn btn-gold">Смотреть меню</a>
+                <a href="contacts.html" class="btn btn-outline" style="border-color: white; color: white;">Заказать
+                    столик</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="#" class="logo" style="color: white;">DOS<span>HOTEL</span></a>
+                <p style="margin-top: 20px; font-size: 14px; line-height: 1.8;">Премиальный отдых в центре Минска. Мы
+                    объединяем традиции гостеприимства и современные технологии безопасности.</p>
+            </div>
+            <div>
+                <h4>Навигация</h4>
+                <ul>
+                    <li><a href="rooms.html">Номера</a></li>
+                    <li><a href="offers.html">Спецпредложения</a></li>
+                    <li><a href="booking.html">Бронирование</a></li>
+                    <li><a href="restaurant.html">Ресторан</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Контакты</h4>
+                <p style="font-size: 14px; margin-bottom: 10px;">Минск, пр. Независимости, 10</p>
+                <p style="font-size: 14px; margin-bottom: 10px;">+375 (17) 222-33-44</p>
+                <p style="font-size: 14px;">welcome@doshotel.by</p>
+            </div>
+            <div>
+                <h4>Новости</h4>
+                <form style="margin-top: 15px; display: flex; gap: 5px;">
+                    <input type="email" placeholder="Ваш Email"
+                        style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.2); padding: 12px; color: white; flex: 1;">
+                    <button class="btn-gold" style="padding: 12px 20px; cursor: pointer; border: none;">OK</button>
+                </form>
+            </div>
+        </div>
+        <div class="container" style="text-align: center; margin-top: 60px; font-size: 12px; opacity: 0.5;">
+            &copy; 2026 DosHotel. Дизайн и разработка: FIT BSTU. Все права защищены.
+        </div>
+    </footer>
+
+    <div id="toast" class="toast">Заявка успешно отправлена!</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
