@@ -200,7 +200,7 @@ html {
 .about-block .about-img {
   flex: 1;
   height: 500px;
-  background: url("https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800") center/cover;
+  background: url("img/121.png") center/cover;
   box-shadow: 30px 30px 0 #b08d57;
 }
 
@@ -331,19 +331,19 @@ html {
   background: rgba(0, 0, 0, 0.4);
 }
 .hero-slider .slide:nth-child(1) {
-  background-image: url("https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1920");
+  background-image: url("img/122.png");
   animation-delay: 0s;
 }
 .hero-slider .slide:nth-child(2) {
-  background-image: url("https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1920");
+  background-image: url("img/123.png");
   animation-delay: 5s;
 }
 .hero-slider .slide:nth-child(3) {
-  background-image: url("https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1920");
+  background-image: url("img/124.png");
   animation-delay: 10s;
 }
 .hero-slider .slide:nth-child(4) {
-  background-image: url("https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1920");
+  background-image: url("img/125.png");
   animation-delay: 15s;
 }
 .hero-slider .hero-content {
@@ -378,7 +378,7 @@ html {
 }
 .restaurant-hero {
   height: 60vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=1600") center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/126.png") center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
